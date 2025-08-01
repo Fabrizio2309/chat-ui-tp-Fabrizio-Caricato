@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-barra-lateral {
+  max-width: 300px;
+  border-style: ridge;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  margin: 20px 20px 0 20px;
+  padding: 5px;
+  width: 80%;
+}
+
+.contenedor-usuarios {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 30px;
+  gap: 20px;
+  width: 100%;
+}
+
+.contenedor-conexion-usuario {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
