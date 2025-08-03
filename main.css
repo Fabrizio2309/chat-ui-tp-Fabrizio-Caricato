@@ -26,6 +26,8 @@ aside input {
 
 button {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 ul {
@@ -77,23 +79,32 @@ main {
 
 .contenedor-chat {
   border-style: ridge;
-  height: 100%;
-  display: flex;
+  display: inline-flex; /* Usar inline-flex para que se ajuste al contenido */
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; /* o lo que prefieras */
 }
 
 .contenedor-mensajes {
   margin: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-.contenedor-mensajes p{
-  padding: 20px;
-  border-style: ridge;
+.contenedor-mensajes p {
+  display: flex;
+  max-width: fit-content;
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 10px;
 }
 
-.contenedor-mensajes p:first-child{
-  text-align: end;
+.mensaje-derecha {
+  align-self: flex-end;
+  background-color: rgb(202, 220, 221);
+}
+
+.mensaje-izquierda {
+  background-color: rgb(204, 204, 204);
 }
 
 .contenedor-envio-mensaje {
@@ -107,9 +118,3 @@ main {
   width: 100%;
   padding: 8px;
 }
-
-.contenedor-envio-mensaje button {
-  background-color: transparent;
-  border: none;
-}
-
