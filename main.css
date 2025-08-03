@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.selector-main {
+  display: flex;
+}
+
 .contenedor-barra-lateral {
   max-width: 300px;
   border-style: ridge;
@@ -34,7 +38,43 @@ input {
   gap: 5px;
 }
 
+.informacion-de-conexion-de-usuario {
+  display: flex;
+  gap: 5px;
+}
+
 img {
   width: 20px;
   height: 20px;
+}
+
+main {
+  display: flex;
+  
+}
+
+.contenedor-barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-style: ridge;
+  height: 22%;
+  width: 1000px;
+  padding: 20px;
+}
+
+.contenedor-info-barra-superior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main-chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-chat {
+  
 }
