@@ -7,8 +7,6 @@
 
 .selector-main {
   display: flex;
-  margin: 50px;
-  height: 550px;
 }
 
 .selector-main aside {
@@ -18,6 +16,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+
+aside, main {
+  height: 100vh;
+  width: 100%;
 }
 
 aside input {
@@ -79,7 +82,6 @@ main {
   align-items: center;
   border: 1px solid #ddd;
   height: 12%;
-  width: 1000px;
   padding: 20px;
 }
 
