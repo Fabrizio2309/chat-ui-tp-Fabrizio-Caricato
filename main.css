@@ -7,7 +7,7 @@
 
 .selector-main {
   display: flex;
-  margin: 20px;
+  margin: 50px;
   height: 550px;
 }
 
@@ -44,18 +44,28 @@ ul {
 
 .contenedor-conexion-usuario {
   display: flex;
-  width: 100%;
-  gap: 5px;
+  align-items: center;
+  gap: 8px;
 }
 
 .informacion-de-conexion-de-usuario {
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  gap: 2px;
+}
+.informacion-de-conexion-de-usuario p{
+  font-size: 12px;
+  color: gray;
+}
+
+.informacion-de-conexion-de-usuario p::before{
+  content: "• ";
+  color: green;
 }
 
 img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 main {
@@ -78,6 +88,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  font-size: 13px;
 }
 
 .contenedor-chat {
@@ -120,5 +131,6 @@ main {
 .contenedor-envio-mensaje input{
   border: 1px solid #ddd;
   width: 100%;
-  padding: 8px;
+  padding: 10px;
+  border-radius: 7px;
 }
