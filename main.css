@@ -76,14 +76,19 @@ li:hover {
   flex-direction: column;
   gap: 2px;
 }
-.informacion-de-conexion-de-usuario p{
+.estado-offline, .estado-online {
   font-size: 12px;
   color: gray;
 }
 
-.informacion-de-conexion-de-usuario p::before{
+.estado-online::before{
   content: "• ";
   color: green;
+}
+
+.estado-offline::before{
+  content: "• ";
+  color: red;
 }
 
 img {
@@ -122,26 +127,37 @@ main {
 }
 
 .contenedor-mensajes {
-  margin: 15px;
   display: flex;
   flex-direction: column;
+  margin: 20px;
+  gap: 10px;
 }
 
-.contenedor-mensajes p {
-  display: flex;
+.contenedor-mensajes-derecha {
+  align-self: flex-end;
   max-width: fit-content;
-  padding: 8px 12px;
-  margin: 6px 0;
+  background-color: rgb(202, 220, 221);
+  padding: 10px;
   border-radius: 10px;
 }
 
-.mensaje-derecha {
-  align-self: flex-end;
-  background-color: rgb(202, 220, 221);
+.contenedor-mensajes-izquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.mensaje-izquierda {
+.contenedor-mensajes-izquierda div {
+  max-width: fit-content;
   background-color: rgb(204, 204, 204);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hora-conexion {
+  font-size: 12px;
+  color: gray;
+  padding-top: 3px;
 }
 
 .contenedor-envio-mensaje {
