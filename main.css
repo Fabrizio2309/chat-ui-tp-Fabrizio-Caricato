@@ -25,8 +25,10 @@ aside, main {
 
 aside input {
   margin: 20px 20px 0 20px;
-  padding: 5px;
+  padding: 10px;
   width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 7px;
 }
 
 button {
@@ -34,6 +36,13 @@ button {
   background-color: transparent;
   border: none;
   font-size: 20px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #ddd;
+  transition: 0.3s;
 }
 
 ul {
@@ -45,10 +54,21 @@ ul {
   width: 100%;
 }
 
+li {
+  border-radius: 10px;
+  padding: 7px;
+}
+
+li:hover {
+  background-color: #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .contenedor-conexion-usuario {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .informacion-de-conexion-de-usuario {
@@ -67,8 +87,8 @@ ul {
 }
 
 img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 main {
@@ -81,7 +101,7 @@ main {
   justify-content: space-between;
   align-items: center;
   border: 1px solid #ddd;
-  height: 12%;
+  height: 8%;
   padding: 20px;
 }
 
@@ -89,8 +109,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  font-size: 13px;
+  gap: 8px;
+  font-size: 16px;
 }
 
 .contenedor-chat {
