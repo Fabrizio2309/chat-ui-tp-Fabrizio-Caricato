@@ -9,7 +9,7 @@
   display: flex;
 }
 
-.selector-main aside {
+aside {
   max-width: 300px;
   border: 1px solid #ddd;
   display: flex;
@@ -45,18 +45,22 @@ button:hover {
   transition: 0.3s;
 }
 
+.boton-atras {
+  display: none;
+}
+
 ul {
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 30px;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
 }
 
 li {
   border-radius: 10px;
-  padding: 7px;
+  padding: 8px;
 }
 
 li:hover {
@@ -173,14 +177,36 @@ main {
   border-radius: 7px;
 }
 
+
 /* ---- responsive design ----*/
 
 /* PANTALLA CELULAR */
 @media (max-width: 767px) {
-
+  
+  aside {
+  display: none;
+  }
+  .boton-atras {
+    display: block;
+    margin-right: 5px;
+  }
 }
 
 /* PANTALLA TABLETS */
 @media (min-width: 768px) and (max-width: 991px) {
+  .informacion-de-conexion-de-usuario {
+    display: none;
+  }
+  .contenedor-conexion-usuario{
+    justify-content: center;
+  }
 
+  .contenedor-conexion-usuario img{
+    width: 60px;
+    height: 60px;
+  }
+    
+  aside {
+    max-width: fit-content;
+  }
 }
