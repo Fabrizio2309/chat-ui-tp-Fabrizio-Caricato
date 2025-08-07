@@ -172,3 +172,15 @@ main {
   padding: 10px;
   border-radius: 7px;
 }
+
+/* ---- responsive design ----*/
+
+/* PANTALLA CELULAR */
+@media (max-width: 767px) {
+
+}
+
+/* PANTALLA TABLETS */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
