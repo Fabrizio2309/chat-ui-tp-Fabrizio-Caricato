@@ -152,7 +152,7 @@ main {
   gap: 10px;
 }
 
-.contenedor-mensajes-izquierda div {
+.contenedor-mensajes-izquierda div,  #mensaje-recibido{
   max-width: fit-content;
   background-color: rgb(204, 204, 204);
   padding: 10px;
