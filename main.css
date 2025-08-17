@@ -49,7 +49,7 @@ button:hover {
   display: none;
 }
 
-ul {
+#lista-contactos {
   display: flex;
   flex-direction: column;
   list-style: none;

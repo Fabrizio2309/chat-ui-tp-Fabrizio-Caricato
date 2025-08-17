@@ -18,7 +18,7 @@ function envioDeMensaje() {
       <p class="hora-conexion">${new Date().toLocaleTimeString()}</p>
     </div>
   `
-
+  
   //al enviar el mensaje, el input vuelve a estar vacio
   $inputMensaje.value = ""
 
