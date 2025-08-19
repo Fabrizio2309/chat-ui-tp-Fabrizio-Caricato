@@ -1,22 +1,22 @@
-const $contactos = document.querySelector("#lista-contactos")
+const $listaContactos = document.querySelector("#lista-contactos")
 
-$contactos = [
-  { name: "Vincent Porter", status: "left 7 mins ago" },
-  { name: "Aiden Chavez", status: "online" },
-  { name: "Mike Thomas", status: "online" },
-  { name: "Christian Kelly", status: "left 10 hours ago" },
-  { name: "Monica Ward", status: "online" },
-  { name: "Dean Henry", status: "offline since Oct 28" }
+contactos = [
+  { nombre: "Vincent Porter", estado: "estado-offline", ultimaConexion: "left 7 mins ago" },
+  { nombre: "Aiden Chavez", estado: "estado-online", ultimaConexion: "now"  },
+  { nombre: "Mike Thomas", estado: "estado-online", ultimaConexion: "now" },
+  { nombre: "Christian Kelly", estado: "estado-offline", ultimaConexion: "left 10 hours ago" },
+  { nombre: "Monica Ward", estado: "estado-online", ultimaConexion: "now"  },
+  { nombre: "Dean Henry", estado: "estado-offline", ultimaConexion: "offline since Oct 28" }
 ]
 
-$contactos.forEach(function (contacto) {
-  $contactos.innerHTML += `
+contactos.forEach(function (contacto) {
+  $listaContactos.innerHTML += `
     <li>
       <div class="contenedor-conexion-usuario">
         <img src="assets/avatar.jpeg" alt="foto de usuario">
           <div class="informacion-de-conexion-de-usuario">
-            <strong>${contacto.name}</strong>
-            <p>${contacto.status}</p>
+            <strong>${contacto.nombre}</strong>
+            <p class="${contacto.estado }">${contacto.ultimaConexion}</p>
           </div>
       </div>
     </li>
